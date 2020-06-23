@@ -27,11 +27,13 @@
     font-family: sans-serif;
     display:inline-block;
     padding-bottom:1%;
+    color:rgb(60,60,60);
 }
 .content-item input[type=text]{
     font-size:2em;
     width: 60%;
 }
+
 .content-item button{
     transition: ease .5s;
     width:38.95%;
@@ -40,6 +42,7 @@
     border:solid;
     border-width: 1px;
     cursor: pointer;
+    color:rgb(60,60,60);
     background-color: white;
 }
 .content-item button:hover{
