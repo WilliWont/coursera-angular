@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asgn1-md</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body ng-app='LunchCheck'>
+    <div class = 'content-container'>
+        <div class = 'content-item' ng-controller = 'LunchCheckController' 
+            style = "border-color:{{resultColor}}">
+
+            <div class ='content-upper'>
+                <span><h1 style = "color:{{resultColor}}">assignment-module1</h1></span>
+                <input type="text" ng-model = 'lunchInput'>
+                <button ng-click = "checkLunch()">check if too much</button>
+            </div>
+
+            <div class = 'content-lower'>
+                <div class = 'content-output' style = "color:{{resultColor}};"> 
+                {{lunchResult}}
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
