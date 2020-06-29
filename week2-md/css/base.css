@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    font-size: 32px;
+}
+
+.content-container{
+    width:80vw;
+    margin-top: 5vh;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.1);
+}
+
+.content-header{
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#6892d5;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.1);
+    color:white;
+}
+
+.content-inner{
+    padding: 1em 3em;
+}
+
+.content-inner h3{
+    margin:0;
+}
+
+.food-item{
+    position:relative;
+    width:100%;
+}
+
+.food-price{
+    position:absolute;
+    right:0;
+}

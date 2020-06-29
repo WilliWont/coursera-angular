@@ -3,48 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="lib/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <title>WK1</title>
+    <title>index</title>
     <style>
-        body{
-            color:rgb(60,60,60);
-        }
-        h1{
-            text-transform: lowercase;
-        }
-        div[ng-controller=firstController]{
-            font-size:1.5em;
-        }
-        div[ng-controller=firstController] input{
-            font-size:1em;
-        }
-        .user-name{
-            display:inline;
-            font-weight:900;
-            text-transform: uppercase;
-        }
-        img{
-            width:20vw;
-            height:20vw;
+        a{
+            font-size:2em;
+            display:inline-block;
+            margin-bottom: 1em;
         }
     </style>
+    <link rel="icon" href="icon.svg">
 </head>
-<body ng-app="firstApp">
-    <h1>Coursera Angular Week 1</h1>
-    <div ng-controller = 'firstController'>
-        {{greet()}}, this is
-        <div class = "user-name">{{name}}</div>
-        <br>
-        change my name:
-        <br>
-        <input type="text" ng-model = "name" ng-keyup = "calculateName();" ng-blur = "upper()">
-        <br>
-        my name has a numeric value of: {{nameValue}}
-
-        <div class = 'wine-btn'><button ng-click="winify()">Winify</button></div>
-        <img ng-src="img/{{glassImg}}" alt="" srcset="">
-    </div>
-    
-</bodyng-app="firstApp">
+<body>
+    <a href="week1-md/index.html">week1-md</a>
+    <br>
+    <a href="asgn1-md/index.html">asgn1-md</a>
+    <br>
+    <a href="week2-md/index.html">week2-md</a>
+</body>
 </html>

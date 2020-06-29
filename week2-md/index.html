@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>wk2-md</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="../icon.svg">
+</head>
+<body ng-app = 'Wk2App'>
+    <div class = 'content-container' ng-controller = 'Wk2Controller'>
+
+        <div class = 'content-header'>
+
+            {{header}}
+
+        </div>
+
+        <div class = 'content-inner'>
+
+            <h3>食べ物：</h3>
+            <div class = 'food-item'>リンゴ<span class = 'food-price'>{{price[0] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item'>ケーキ<span class = 'food-price'>{{price[1] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item'>メロン<span class = 'food-price'>{{price[2] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item'>牛肉<span class = 'food-price'>{{price[3] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item'>豚肉<span class = 'food-price'>{{price[4] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item'>鶏肉<span class = 'food-price'>{{price[5] | currency : '¥' : 0}}</span></div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
