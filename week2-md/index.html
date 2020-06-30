@@ -21,13 +21,63 @@
         <div class = 'content-inner'>
 
             <h3>食べ物：</h3>
-            <div class = 'food-item'>リンゴ<span class = 'food-price'>{{price[0] | currency : '¥' : 0}}</span></div>
-            <div class = 'food-item'>ケーキ<span class = 'food-price'>{{price[1] | currency : '¥' : 0}}</span></div>
-            <div class = 'food-item'>メロン<span class = 'food-price'>{{price[2] | currency : '¥' : 0}}</span></div>
-            <div class = 'food-item'>牛肉<span class = 'food-price'>{{price[3] | currency : '¥' : 0}}</span></div>
-            <div class = 'food-item'>豚肉<span class = 'food-price'>{{price[4] | currency : '¥' : 0}}</span></div>
-            <div class = 'food-item'>鶏肉<span class = 'food-price'>{{price[5] | currency : '¥' : 0}}</span></div>
+            <div class = 'food-item' ng-click="addItem(0)">
+                <span class = 'food-item-title'>
+                    リンゴ
+                    <span class = 'food-item-count hide-item'>{{itemAmount[0]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[0] | currency : '¥' : 0}}
+                </span>
+            </div>
+            <div class = 'food-item' ng-click="addItem(1)">
+                <span class = 'food-item-title'>
+                    ケーキ
+                    <span class = 'food-item-count hide-item'>{{itemAmount[1]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[1] | currency : '¥' : 0}}
+                </span>
+            </div>
+            <div class = 'food-item' ng-click="addItem(2)">
+                <span class = 'food-item-title'>
+                    鶏肉
+                    <span class = 'food-item-count hide-item'>{{itemAmount[2]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[2] | currency : '¥' : 0}}
+                </span>
+            </div>
+            <div class = 'food-item' ng-click="addItem(3)">
+                <span class = 'food-item-title'>
+                    豚肉
+                    <span class = 'food-item-count hide-item'>{{itemAmount[3]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[3] | currency : '¥' : 0}}
+                </span>
+            </div>
+            <div class = 'food-item' ng-click="addItem(4)">
+                <span class = 'food-item-title'>
+                    牛肉
+                    <span class = 'food-item-count hide-item'>{{itemAmount[4]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[4] | currency : '¥' : 0}}
+                </span>
+            </div>
+            <div class = 'food-item' ng-click="addItem(5)">
+                <span class = 'food-item-title'>
+                    メロン
+                    <span class = 'food-item-count hide-item'>{{itemAmount[5]}}</span>
+                </span>
+                <span class = 'food-price'>
+                    {{price[5] | currency : '¥' : 0}}
+                </span>
+            </div>
             
+            <div>Total: {{totalPrice | currency : '¥' : 0}}</div>
+
         </div>
 
     </div>
