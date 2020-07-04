@@ -48,8 +48,8 @@ body{
 .food-item-count{
     transition: ease .2s;
     position: absolute;
-    background-color: #f7a204;
-    border-color: #f7a204;
+    background-color: #10f55c;
+    border-color: #10f55c;
     color:rgb(50,50,50);
     display: flex;
     justify-content: center;
@@ -68,6 +68,94 @@ body{
     opacity: .5;
 }
 
+.btn-container{
+    margin-top:2.5vh;
+}
+
+.btn-chkout{
+    transition: .5s ease;
+    position: relative;
+    width:10vw;
+    height:5vh;
+    font-size:.75em;
+    background-color: #6892d5;
+    border-color: #6892d5;
+    border-style:solid;
+    color:#ebf0f8;
+}
+
+.btn-process img{
+    transition: .25s ease;
+    position: absolute;
+    z-index: 50;
+    top:-.5em;
+    right:-.5em;
+    width: 1em;
+}
+
+.opa0{
+    transition: .25s ease;
+    opacity: 0;
+}
+
+.rotate360inf{
+    animation: rotate360 1.25s infinite;
+}
+
+@keyframes rotate360{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.btn-chkout:hover{
+    transition: .5s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.1);
+    background-color: rgb(255,255,255);
+    color: #6892d5;
+}
+
+.btn-success{
+    font-size:.5em;
+    font-family: sans-serif;
+    color: #2cb158;
+    opacity: 0;
+}
+
+.anim-fade-in{
+    animation: 2.5s ease fade-in;
+}
+.anim-fade-out{
+    animation: .5s ease fade-out;
+}
+
+@keyframes fade-out{
+    0%{
+        opacity:100;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 100;
+    }
+    70%{
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 @keyframes pop{ 
     0%{
@@ -89,7 +177,7 @@ body{
     transition: .2s ease;
     color:#6892d5;
     border-color:#6892d5;
-    background-color: #ebf0f8;
+    /* background-color: #ebf0f8; */
     box-shadow: 0px 4px 7px rgba(0,0,0,.1);
 }
 

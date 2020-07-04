@@ -76,7 +76,19 @@
                 </span>
             </div>
             
-            <div>Total: {{totalPrice | currency : '¥' : 0}}</div>
+            <div class = 'ttl-container'>Total: 
+                <span class = 'ttl-inner'>{{totalPrice | currency : '¥' : 0}}</span>
+            </div>
+
+            <div class = 'btn-container'>
+                <button class = 'btn-chkout' ng-click = "checkOut()">
+                    checkout
+                    <div class = 'btn-process'>
+                        <img src="img/refresh.svg" alt="" id = 'loading-circle' class = 'opa0'>
+                    </div>
+                </button>
+                <span class = 'btn-success'>{{btnResult}}</span>
+            </div>
 
         </div>
 
